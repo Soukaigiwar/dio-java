@@ -17,4 +17,8 @@ public class Area {
         return ((X1 + X2) * h) / 2;
     }
 
+    public static double area(float x) {
+
+        return 3.14f * (x * x);
+    }
 }
