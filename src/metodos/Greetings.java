@@ -1,4 +1,4 @@
-package mello.sergio;
+package metodos;
 
 public class Greetings {
 
@@ -6,12 +6,14 @@ public class Greetings {
 
         String greeting;
 
-        if(hour > 6 && hour < 12)
+        if(hour >= 1 && hour <= 11)
             greeting = "bom dia!!!";
-        else if (hour > 11 && hour < 18)
+        else if (hour >= 12 && hour <= 17)
             greeting = "boa tarde!!!";
-        else
+        else if (hour >= 18 && hour <= 24)
             greeting = "boa noite!!!";
+        else
+            greeting = "Hora inválida!!";
 
         return (greeting);
     }

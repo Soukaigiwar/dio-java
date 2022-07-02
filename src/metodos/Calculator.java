@@ -1,4 +1,4 @@
-package mello.sergio;
+package metodos;
 
 public class Calculator {
 

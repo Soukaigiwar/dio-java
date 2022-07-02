@@ -1,4 +1,4 @@
-package mello.sergio;
+package metodos;
 
 public class Main {
 
@@ -26,6 +26,6 @@ public class Main {
 
         System.out.println("++++++++++++++++ GREETINGS +++++++++++++++++");
 
-        System.out.println("Olá, " + Greetings.getGreetings(19)); // output: Olá, boa noite!!!
+        System.out.println("Olá, " + Greetings.getGreetings(25)); // output: Olá, boa noite!!!
     }
 }
