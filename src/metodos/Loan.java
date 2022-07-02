@@ -2,11 +2,11 @@ package metodos;
 
 public class Loan {
 
-    public static double loanCalculator(double value, int parcel){
+    public static double loanCalculator(double value, double percent, int parcel){
 
         double result;
 
-        result = (percentCalc(parcel) * value / 100 + value) / parcel;
+        result = (percent * value / 100 + value) / parcel;
         return result;
     }
 

@@ -19,7 +19,7 @@ public class Main {
         double value = 1000d;
         int parcel = 3;
 
-        String loan = String.format("%.2f", Loan.loanCalculator(value, parcel));
+        String loan = String.format("%.2f", Loan.loanCalculator(value, Loan.percentCalc(parcel), parcel));
 
         System.out.println("O empréstimo de R$ " + value + " vai sair por: ");
         System.out.println(parcel + " parcelas de r$ " + loan + "\n");
