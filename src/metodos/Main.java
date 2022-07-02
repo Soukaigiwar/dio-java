@@ -26,6 +26,9 @@ public class Main {
 
         System.out.println("++++++++++++++++ GREETINGS +++++++++++++++++");
 
-        System.out.println("Olá, " + Greetings.getGreetings(25)); // output: Olá, boa noite!!!
+        System.out.println("Olá, " + Greetings.getGreetings(5)); // output: Olá, bom dia!!!
+        System.out.println("Olá, " + Greetings.getGreetings(14)); // output: Olá, boa tarde!!!
+        System.out.println("Olá, " + Greetings.getGreetings(20)); // output: Olá, boa noite!!!
+        System.out.println("Olá, " + Greetings.getGreetings(28)); // output: Olá, Hora inválida!!!
     }
 }
