@@ -12,12 +12,13 @@ public class Consoantes {
         int numCaracteres = 6;
         int numConsoantes = lerString(numCaracteres);
 
-        System.out.println("Entre esses caracteres, existem " + numConsoantes + " consoantes.");
+        System.out.println("Totalizando: " + numConsoantes + " consoantes.");
     }
 
     public static int lerString(int numCaracteres){
 
         Scanner charInput = new Scanner(System.in);
+        StringBuilder consoantes = new StringBuilder();
         int counter = 0;
 
         System.out.println("Digite " + numCaracteres + " caracteres para testar quantas consoantes ha: ");
@@ -25,9 +26,12 @@ public class Consoantes {
         for(int i = 0; i < numCaracteres; i++){
             System.out.print("Caracter " + i + ": ");
             char meuChar = charInput.nextLine().charAt(0);
-            if (checarConsoante(meuChar))
+            if (checarConsoante(meuChar)) {
+                consoantes.append(meuChar);
                 counter++;
+            }
         }
+        System.out.println("Digitou as consoantes: " + consoantes);
 
         return counter;
     }
