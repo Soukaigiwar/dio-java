@@ -1,9 +1,6 @@
 package Collections;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Scanner;
+import java.util.*;
 
 public class Exercicio2 {
 
@@ -26,7 +23,7 @@ public class Exercicio2 {
 
         List<String> perguntas = listaDePerguntas();
 
-        System.out.println("Lista de Interrogatorio (Responda com 's' ou 'n')");
+        System.out.println("Lista de Interrogatorio (Responda com 's' ou 'n')\n");
         List<String> respostas = listaDeRespostas(perguntas);
 
 
@@ -64,10 +61,9 @@ public class Exercicio2 {
 
     public static String evalRespostas(List respostas) {
         int sim = 0;
-        String result = null;
 
-        for (Object resposta : respostas )
-            if (Objects.equals(resposta, "s")) sim++;
+        for (String resposta : (Iterable<String>) respostas)
+            if (resposta.contains("s")) sim++;
 
         return switch (sim) {
             case 1, 2 -> "Suspeita";
