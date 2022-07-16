@@ -1,0 +1,6 @@
+﻿Livro
+    ISBN
+    Titulo
+    Autor
+    Assunto
+    Paginas
