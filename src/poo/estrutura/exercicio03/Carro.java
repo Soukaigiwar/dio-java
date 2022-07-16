@@ -1,4 +1,4 @@
-package poo.exercicio03;
+package poo.estrutura.exercicio03;
 
  // Crie a classe Carro
 

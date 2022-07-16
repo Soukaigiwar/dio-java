@@ -1,4 +1,4 @@
-package poo.exercicio04;
+package poo.estrutura.exercicio04;
 
 public class Carro {
 
